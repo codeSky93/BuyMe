@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Publier une annonce - BuyMe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+          <!-- Logo BuyMe -->
+        <a href="index.html" class="logo">
+            <img src="logo-buyme.jpg" alt="Logo BuyMe">
+           </a>  
+            <div class="container">
+                <h1>BuyMe</h1>
+                <p class="slogan">Connectez-vous pour accéder à la plateforme</p>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="BuyMe.html">Acceuil</a></li>
+                        <li><a href="AnnonceBuyMe.html">Annonces</a></li>
+                        <li><a href="PublierBuyMe.html">Publier</a></li>
+                        <li><a href="inscriptionBuyMe.html">Créer un compte</a></li>
+                        <li><a href="ConnexionBuyMe.html">Se connecter</a></li>
+                        <li><a href="profileBuyMe.html">Profil</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <h2>Publier l'annonce</h2>
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="title"> Titre du produit : </label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="price">Prix ($) : </label>
+                    <input type="number" id="price" name="price" required>
+
+                    <label for="city">Ville : </label>
+                    <select id="city" name="city" required>
+                        <option value="">-- Choisir une ville --</option>
+                        <option value="kinshasa">kinshasa</option>
+                        <option value="Kikwit">Kikwit</option>
+                        <option value="Lubumbashi">Lubumbashi</option>
+                        <option value="Mbuji-mayi">Mbuji-mayi</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+
+                    <label for="category">Catégorie : </label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Choisir une catégorie--</option>
+                        <option value="Télephone">Télephone</option>
+                        <option value="vetements">Vetements</option>
+                        <option value="voiture">Voiture</option>
+                        <option value="immobilier">Immobillier</option>
+                        <option value="electromenager">Electromenager</option>
+                        <option value="meubles">Meubles</option>
+                        <option value="cosmetique">Cosmetique</option>
+                        <option value="chaussure">chaussure</option>
+                    </select>
+                    <br><br>
+
+                    <label for="description">Description : </label>
+                    <textarea id="file" name="description" rows="4" required></textarea>
+
+                    <label for="phto">Photo du produit : </label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <button type="submit">Publier l'annonce</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 BuyMe - Tous droits réservés</p>
+                <p>muyonsosky</p>
+            </div>
+        </footer>
+
+    </body>    
+</html>      
