@@ -237,6 +237,63 @@ header .logo img {
   background: #0077aa;
 }
 
+/* tondolooooooooooooooooooooooooooooooooooooooooooooooo*/
+
+/* Style général */
 
 
 
+
+/* Carte de profil */
+.profile-card {
+  background: white;
+  padding:  20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Photo de profil ronde */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texte profil */
+.profile-card h3 {
+  margin: 10px 0;
+  color: #202020;
+}
+
+.profile-card p {
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Annonces et évaluations */
+.my-annonces li, .ratings li {
+  background: #22282c;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 5px solid #30abe3;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(249, 247, 247, 0.05);
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  padding: 20px 0;
+  text-align: center;
+}
