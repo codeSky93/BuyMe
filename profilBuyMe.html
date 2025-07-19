@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <link rel="stylesheet" href="style.css">
 </head>    
+
 <body>
-    <header>
-        <div class="container">
-        <!-- Logo BuyMe -->
-        <a href="index.html" class="logo">
-         <img src="logo-buyme.jpg" alt="Logo BuyMe">
-        </a>
-            
-        <h1>BuyMe</h1>
-        <p class="slogan">Achetez et négociez à votre prix </p>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <nav id="navbar">
-            <ul>
-                <li><a href="BuyMe.html">Acceuil</a></li>
-                <li><a href="AnnonceBuyMe.html">Annonces</a></li>
-                <li><a href="PublierBuyMe.html">Publier</a></li>
-                <li><a href="inscriptionBuyMe.html">Créer un compte</a></li>
-                <li><a href="ConnexionBuyMe.html">Se connecter</a></li>
-                <li><a href="profileBuyMe.html">Profil</a></li>
-            </ul>
-        </nav>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo-buyme.jpg" alt="Logo BuyMe">
+      </a>
+      <h1>BuyMe</h1>
+      <p class="slogan">Achetez et négociez à votre prix </p>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="BuyMe.html">Accueil</a></li>
+          <li><a href="AnnonceBuyMe.html">Annonces</a></li>
+          <li><a href="PublierBuyMe.html">Publier</a></li>
+          <li><a href="inscriptionBuyMe.html">Créer un compte</a></li>
+          <li><a href="ConnexionBuyMe.html">Se connecter</a></li>
+          <li><a href="profileBuyMe.html">Profil</a></li>
+        </ul>
+      </nav>
     </div>
-    </header>
+  </header>
 
-    <section style="background-image: url('photoBuyMe/fond.jpg'); background-size: cover; background-position: top ;background-repeat: no-repeat;">
-        <div class="container">
-            <h2 style="text-align: center;">Mon profil</h2>
+  <section style="background-image: url('photoBuyMe/fond.jpg'); background-size: cover; background-position: top; background-repeat: no-repeat;">
+    <div class="container white-box">
+      <h2 style="text-align: center;">Mon profil</h2>
 
-            <div class="profile-card">
-                <img src="photoBuyMe/photo_2025-06-28_08-39-20.jpg" alt="Photo de profil" class="profil-pic">
-                <h3>Nom d'utilisateur : <strong>muyons93</strong></h3>
-                <p>Email : muyonsolebo@icloud.com</p>
-            </div>
-            <h2 style="text-align: center;" ><a href="PublierBuyMe.html">Publier</a></h2>
-            
-            <h3>Mes annonces</h3>
-            <ul class=" my-annonces">
-                <li> <img src="photoBuyMe" alt="photo iphone"></li>
-            </ul>
+      <div class="profile-card">
+        <img src="photoBuyMe/photo_2025-06-28_08-39-20.jpg" alt="Photo de profil" class="profile-pic">
+        <h3>Nom d'utilisateur : <strong>muyons93</strong></h3>
+        <p>Email : muyonsolebo@icloud.com</p>
+      </div>
 
-            <h3>Evaluations reçues</h3>
-            <ul class="ratings">
-                <li>Très fiable !</li>
-                <li>Fiable !</li>
-                <li>Moyen !</li>
-                <li>Bad !</li>
-            </ul>
-        </div>
-    </section>
+      <hr>
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 BuyMe - Tous droits réservés</p>
-                <p>muyonsosky</p>
-            </div>
-        </footer>
-        <script src="JS/script.js"></script>
-        <script src="JS/scriptprofil.js"></script>
+      <h3>À propos de moi</h3>
+      <p>
+        Bonjour, je suis un vendeur passionné basé à Kinshasa.  
+        Je partage régulièrement des annonces fiables et je suis disponible pour discuter et négocier avec les clients.
+      </p>
 
+      <h3>Ce que je vends</h3>
+      <p>
+        Téléphones, accessoires, vêtements, électroménagers, et parfois des meubles.  
+        Tous mes produits sont en bon état. N’hésitez pas à me contacter !
+      </p>
+
+      <hr>
+
+      <h2 style="text-align: center;"><a href="PublierBuyMe.html">Publier</a></h2>
+
+      <h3>Mes annonces</h3>
+      <ul class="my-annonces">
+        <li><img src="photoBuyMe/iphone.jpg" alt="photo iphone" class="annonce-img"></li>
+      </ul>
+
+      <h3>Évaluations reçues</h3>
+      <ul class="ratings">
+        <li>⭐ Très fiable !</li>
+        <li>⭐ Fiable !</li>
+        <li>⭐ Moyen !</li>
+        <li>⭐ Bad !</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BuyMe - Tous droits réservés</p>
+      <p>muyonsosky</p>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
 </body>
 </html>

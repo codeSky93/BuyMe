@@ -1,74 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inscription-BuyMe</title>
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscription – BuyMe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="form-page">
 
-        <header>
-            <!-- Logo BuyMe -->
-            <a href="index.html" class="logo">
-            <img src="logo-buyme.jpg" alt="Logo BuyMe">
-           </a>
-            <div class="container">
-                <h1>BuyMe</h1>
-                <P class="slogan">Créez votre compte</P>
-                <button class="menu-toggle" id="menu-toggle">☰</button>
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="BuyMe.html">Acceuil</a></li>
-                        <li><a href="AnnonceBuyMe.html">Annonces</a></li>
-                        <li><a href="PublierBuyMe.html">Publier</a></li>
-                        <li><a href="inscriptionBuyMe.html">Créer un compte</a></li>
-                        <li><a href="ConnexionBuyMe.html">Se connecter</a></li>
-                        <li><a href="profilBuyMe.html">Profil</a></li>
-                    </ul>
-                </nav>    
-            </div>
-           
-        </header>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo-buyme.jpg" alt="Logo BuyMe">
+      </a>
+      <h1>BuyMe</h1>
+      <p class="slogan">Créez votre compte</p>
+    </div>
+  </header>
 
-        <section style="background-image: url('photoBuyMe/fond.jpg'); background-size: cover; background-position: center;background-repeat: no-repeat;">
-            <div class="container">
-                <h2 style="text-align: center;">Inscription</h2>
-                <form action="#" method="post" id="registerForm">
-            <div>
-                <br>       
-                    <label for="username">Nom d'utilisateur :</label>
-                    <input type="text" id="username" name="username" required>
-            </div>
-                <br>
-            <div>
-                <br> 
-                    <label for="email">Adresse email :</label>
-                    <input type="email" id="email" name="email" required>
+  <!-- SECTION INSCRIPTION AVEC FORMULAIRE CENTRÉ -->
+  <section class="form-section" style="background-image: url('photoBuyMe/fond.jpg'); background-size: cover;">
+    <div class="form-container">
+      <h2>Créer un compte</h2>
+      <form action="#" method="post" id="registerForm">
+        <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" required>
+        <input type="email" id="email" name="email" placeholder="Adresse email" required>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+        <button type="submit">Créer un compte</button>
+      </form>
+      <p class="form-link">Déjà inscrit ? <a href="ConnexionBuyMe.html">Connectez-vous ici</a>.</p>
+    </div>
+  </section>
 
-            </div>
-                <br> 
-            <div> 
-                <br> 
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BuyMe - Tous droits réservés</p>
+      <p>muyonsosky</p>
+    </div>
+  </footer>
 
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" required>
-            </div> 
-                <br>         
-                    <button type="submit">Créer un compte</button>
-
-                </form>
-
-                <p style="margin-top: 15px;">Déjà inscrit ? <a href="ConnexionBuyMe.html"> Connectez-vous ici </a>.</p>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2025 BuyMe - Tous droits réservés</p>
-                <p>muyonsosky</p>
-            </div>
-        </footer>
-        <script src="JS/script.js"></script>
-    </body>
+  <script src="JS/script.js"></script>
+</body>
 </html>
