@@ -1,4 +1,4 @@
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function (e) {
@@ -6,7 +6,7 @@
     const price = document.getElementById("price").value.trim();
     const photo = document.getElementById("photo").files[0];
 
-    if (!title  !price  !photo) {
+    if (!title || !price || !photo) {
       alert("Merci de remplir tous les champs requis.");
       e.preventDefault();
     }

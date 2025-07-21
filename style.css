@@ -96,20 +96,26 @@ footer {
   }
 
   nav {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     background: #009fd9;
+    padding: 0;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+  }
+
+  nav.show {
+    max-height: 300px; /* hauteur estimée du menu */
     padding: 10px 0;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav.show {
-    display: block;
+    gap: 15px;
   }
 }
+
+
 
 /* ACCUEIL */
 .accueil {
@@ -396,3 +402,37 @@ footer {
   margin-top: 15px;
   font-size: 0.9em;
 }
+.search-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.rating-stars .star {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating-stars .star.selected,
+.rating-stars .star:hover,
+.rating-stars .star:hover ~ .star {
+  color: #FFD700; /* Jaune doré */
+}
+
